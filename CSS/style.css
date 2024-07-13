@@ -1,0 +1,384 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    color: black;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#nav::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+nav ul {
+    list-style: none;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: double;
+    display: block;
+    padding: 3px 30px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+nav ul li :hover{
+    color: gray;
+    text-decoration: underline;
+    font-size: large;
+}
+#logo {
+  margin: 10px 34px;
+
+}
+
+#logo img {
+    height: 80px;
+    margin: 3px 15px;
+    border-radius: 100px;
+}
+
+
+
+/* Home */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 650;
+}
+
+.message-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style our message text */
+.message-text {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Add some animation to our message text */
+.message-text {
+    animation: message-animation 8s infinite;
+}
+
+@keyframes message-animation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#home p {
+    color: rgb(7, 170, 83);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services */
+#services {
+    margin: 50px;
+    display: flex;
+  }
+
+#services img:hover{
+  transform: scale(1.2);
+}
+
+/* Information*/
+#Information  {
+    margin: 50px;
+    display: flex;
+    text-align: center;
+    font-size: large;
+    color: blueviolet;
+
+}
+
+#Information .box{
+  border-color: #2c0105;
+  border-width: 4px;
+  border-style: dashed;
+  width: 400px;
+  height: 500px;
+  float: left;
+}
+
+#Information h2 {
+  color: #333;
+}
+#location-section {
+  margin-top: 40px;
+}
+
+#location-section iframe {
+  border: none;
+}
+
+/* Meet Our Doctors */
+  #meet-doctors {
+    background-color: #f7f7f7;
+    padding: 40px;
+  }
+  
+  .doctor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .doctor-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .doctor-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-card .btn {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .doctor-card .btn:hover {
+    background-color: #23527c;
+  }
+
+/* Reviews */
+#review-section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#review-form label {
+  margin-bottom: 10px;
+}
+
+#review-form input, #review-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#review-form button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#review-form button:hover {
+  background-color: #3e8e41;
+}
+
+#review-display {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}
+
+/* Appointment */
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .appointment-form {
+    width: 40%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  
+  .hospital-info {
+    width: 60%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appointment-form h2 {
+    margin-top: 0;
+  }
+  
+  .appointment-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .appointment-form input[type="text"], .appointment-form input[type="email"], .appointment-form input[type="tel"], .appointment-form input[type="date"] 
+  {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .appointment-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .appointment-form button[type="submit"]:hover {
+    background-color: #c24608;
+  }
+  
+  .appointment-form button[type="reset"]{
+    background-color: #337ab7;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .appointment-form button[type="reset"]:hover{
+    background-color: #c24608;
+  }
+
+  
+  
+  .hospital-info h2 {
+    margin-top: 0;
+  }
+  
+  .hospital-info p {
+    margin-bottom: 10px;
+  }
+  
+  .hospital-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hospital-info li {
+    margin-bottom: 10px;
+  }
+
+/* footer*/
+footer {
+  color: grey;
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+}
+.msg{
+  color: #000;
+  width: auto;
+  margin-right: 900px;
+}
+.msg h4{
+  text-decoration: underline;
+}
+
+
+/* Utility Classes */
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    padding: 0px;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 20px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: black;
+    color: burlywood;
+    border: 3px solid red;
+}
+
+.center {
+    text-align: center;
+}
